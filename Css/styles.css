@@ -121,5 +121,9 @@ select {
         width: 80%;
         padding-left: 60px;
     }
+
+    .container {
+        padding-bottom: 55px;
+    }
 }
 

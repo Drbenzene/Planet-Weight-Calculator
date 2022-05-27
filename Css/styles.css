@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Raleway, sans-serif;
+  background-image: url("../Img/martin-sanchez-j2c7yf223Mk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+:root {
+  --mainBlack: black;
+  --mainWhite: white;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.header > h1 {
+  text-align: center;
+}
+
+.input-Data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3.215rem 0rem 1.875rem 0rem;
+}
+.mapContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mainBlack);
+  border: 3px solid var(--mainWhite);
+  border-radius: 10px;
+  padding: 80px 0px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 40px 0;
+}
+
+.get-result-container {
+  margin: 0px 100px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.resultCon {
+  background-color: black;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid white;
+  align-items: center;
+  text-align: center;
+}
+
+.get-result-container > p {
+  margin: 20px 0px;
+}
+
+.input-Data input,
+button,
+select {
+  padding: 0.6rem 1.5rem;
+  font-size: 18px;
+}
+
+.resultCon > p {
+  position: relative;
+  top: 5rem;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+#thePlanetResult {
+    font-weight: bold
+}
+
+#planet {
+    color: green;
+}
+
+@media only screen and (max-width: 768px) {
+  .mapContainer {
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+
+  .input-Data {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3.215rem 0rem 1.875rem 0rem;
+  }
+
+  .input-Data input, .input-Data select, .input-Data button { 
+      width: 80%;
+      margin: .625rem 0rem;
+  }
+
+  .get-result-container {
+      margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .mapImage >img {
+        width: 80%;
+        padding-left: 60px;
+    }
+}
+
